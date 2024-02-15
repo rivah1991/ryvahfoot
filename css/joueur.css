@@ -1,0 +1,30 @@
+div#cadre1
+{
+    width: 50%;
+    float: left;
+    height: 100px;
+
+}
+
+div#cadre2
+{
+    width: 50%;
+    float: left;
+    height: 100px;
+
+}
+.images {
+   #position:absolute;
+    border:1px solid #ccc;
+    background: round;
+    padding:4px;
+    width: 400px;
+    height: 400px;
+    color:red;
+    margin-left: 5%;
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+}
+

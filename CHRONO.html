@@ -1,0 +1,257 @@
+<html>
+	<head>
+
+		<title>CHRONO</title>
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script src="scripts/rebours.js"></script>
+  <link rel= "stylesheet"   type = "text/css"   href="css/Chrono.css">
+		<style type="text/css">
+  	body 	{
+    		color: white;
+    		background-color: blue;
+            font-style: inherit;
+            font-weight: bold;
+		}
+
+	p {
+  		color: red;
+		width: 500px;
+		border:200px;
+	  }
+	div.right{
+		    float:right;
+
+		}
+
+	div.left {
+		    float:left;
+		}
+
+
+  </style>
+	</head>
+	<body>
+
+
+<div class="header">
+</div>
+<a href="src/Page.php">
+    <img class="logo" src="images/logo.jpg"  style="float:right";>
+</a>
+<div id="global">
+       <div id="header">
+          <div class="soustitre">
+           ORGANISATEUR
+          </div>
+		<marquee direction="left"><h1>ASSOCIATON MADAGASCAR STANDARD PLUS</h1></marquee>
+      </div>
+    <div>
+    <div id="rebour" style="display:none;">
+
+        <div id="count">
+        <span id="countdown"></span>
+        </div>
+         </div>
+
+    </div>
+    <div id="body">
+       <div id="sidebar1">
+           <br/>
+           <br/>
+          <label for="equipe">EQUIPE A :</label>
+			<input type="text" name="equipe" id="equipeA" />
+           <br/>
+           <br/>
+           <br/>
+  			SCORE
+           <br/>
+           <input class="input" type="number" />
+       </div>
+          <div id="content">
+              <div controls >
+                  Temps restant:
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <div id="nonrebour">
+
+                      <br/>
+                      <span>00 : 00</span>
+
+                  </div>
+
+                  <br/>
+              </div>
+              <br/>
+              <br/>
+
+          </div>
+    </div>
+
+        <div id="sidebar2">
+
+            <br/>
+            <br/>
+			<label for="equipe">EQUIPE B :</label>
+			<input type="text" namrete="equipe" id="equipeB" />
+            <br/>
+            <br/>
+          <br/>
+			SCORE
+            <br/>
+            <input class="input" type="number" />
+        </div>
+
+      <div id="boutte">
+          <div class="play"  id="b1" style="display:none";  >
+              <input type="button"   value="play"  onclick="start('andrana');countdownTimer=setInterval('secondPassed()',1000);" >
+
+          </div>
+
+          <div class="pause"  id="b2" style="display:none"; >
+              <input type="button" value="Pause" onclick="stop1();" >
+          </div>
+          <div class="play"  id="retour" style="display:none"; align="right" >
+              <input type="button"   value="retour" onclick="exitFull()" >
+
+          </div>
+      </div>
+    </div>
+   <div class="footer" >
+    <div class="fullScreen">
+        </br>
+        <label>Choix d'heure</label>
+        </br>
+        </br>
+        <input type="button" value="45'"  id="min45"   onclick="start('test');countdownTimer=setInterval('secondPassed()',1000); min45();stop1()" >
+        <input type="button" value="30'"  id="min30" onclick="start('test');countdownTimer=setInterval('secondPassed()',1000); min30(); stop1()" >
+        <input type="button"  value="20'" id="min20"   onclick="start('test');countdownTimer=setInterval('secondPassed()',1000); min20(); stop1()">
+        <input type="button"  value="15'" id="min15"   onclick="start('test');countdownTimer=setInterval('secondPassed()',1000); min15(); stop1()">
+        <input type="button"  value="5'" id="min5"   onclick="start('test');countdownTimer=setInterval('secondPassed()',1000); min5(); stop1()">
+
+    </div>
+
+</div>
+
+</div>
+ </div>
+
+
+	</body>
+    <script>
+        const enterFullScreen = function( element ){
+            if( element.requestFullScreen ){
+                element.requestFullScreen();
+            } else if ( element.webkitRequestFullScreen ){
+                element.webkitRequestFullScreen( Element.ALLOW_KEYBOARD_INPUT );
+            } else if ( element.mozRequestFullScreen ){
+                element.mozRequestFullScreen();
+            }
+        };
+
+        document.querySelector( '.fullScreen' ).addEventListener( 'click', function( ev ){
+            enterFullScreen( document.body );
+        }, false );
+    </script>
+    <script>
+        function exitFull(){
+            if (document.fullscreenElement) {
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen();
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+         }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#b1").hide();
+                $("#body").hide();
+                $("#b2").show();
+                $('#retour').show();
+                $("#rebour").show();
+                $(".footer").hide();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+
+            $("#b2").click(function(){
+                $("#b2").hide();
+                $("#b1").show();
+            })
+            $("#min30").click(function(){
+                $("#b2").hide();
+                $("#body").hide();
+                $("#b1").show();
+                $("#rebour").show();
+                $(".footer").hide();
+                $('#retour').show();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+
+            $("#min15").click(function(){
+                $("#b2").hide();
+                $("#body").hide();
+                $("#b1").show();
+                $("#rebour").show();
+                $('#retour').show();
+                $(".footer").hide();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+            $("#min5").click(function(){
+                $("#b2").hide();
+                $("#body").hide();
+                $("#b1").show();
+                $("#rebour").show();
+                $('#retour').show();
+                $(".footer").hide();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+            $("#min45").click(function(){
+                $("#b1").show();
+                $("#body").hide();
+                $("#b2").hide();
+                $("#rebour").show();
+                $('#retour').show();
+                $(".footer").hide();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+
+            $("#min20").click(function(){
+                $("#b2").hide();
+                $("#body").hide();
+                $("#b1").show();
+                $("#rebour").show();
+                $(".footer").hide();
+                $('#retour').show();
+
+                $("#sidebar1").hide();
+                $("#sidebar2").hide();
+            });
+            $("#retour").click(function(){
+                $("#b1").hide();
+                $("#body").show();
+                $("#b2").hide();
+                $("#rebour").hide();
+                $(".footer").show();
+                $('#retour').hide();
+
+                $("#sidebar1").show();
+                $("#sidebar2").show();
+            });
+        });
+    </script>
+</html>

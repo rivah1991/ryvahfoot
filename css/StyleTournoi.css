@@ -1,0 +1,36 @@
+div#head {
+
+    background-color: #9fcdff;
+    font-size: 15px;
+
+}
+
+div#menu {
+
+    float:left;
+    width:120px;
+    height:2000px;
+    background-color: #80bdff;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: double;
+
+}
+
+div#contenu {
+
+    float:left;
+    width:1037px;
+    height:800px;
+    background-color:#ffffff;
+
+}
+
+div#pied_page {
+
+    clear:both;
+    width:950px;
+    height:50px;
+    background-color:#33FF99;
+
+}

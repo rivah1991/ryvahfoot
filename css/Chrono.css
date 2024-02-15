@@ -1,0 +1,181 @@
+
+body{
+    text-align: center;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+ #global{
+     width: 800px;
+     margin: 0 auto;
+     font-family: "times New Roman";
+     font-size: 20px;
+
+ }
+ #header{
+     padding: 30px 0;
+     padding: 20px;
+ }
+.sidebar1{
+    float: left;
+    width: 150px;
+    padding: 10px;
+    margin-top: 14%;
+    font-size: 18px;
+
+
+}
+
+.sidebar2{
+    float: right;
+    margin-top: 5%;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+
+
+}
+#equipeA{
+    margin-left: -50px;
+    margin-top: -50px;
+    font-size: 15px;
+    font-family: "times New Roman";
+
+}
+#equipeB{
+    margin-right: -50px;
+    margin-top: -50px;
+    font-size: 15px;
+    font-family: "times New Roman";
+
+}
+#content{
+    float: left;
+    margin-left: 85px;
+    margin-top: 50px;
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    background: purple;
+    font-size: 25px;
+    }
+
+.input
+{
+    height: 25px;
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+
+}
+#count{
+    text-align: center;
+    margin:10px;
+}
+#rebour{
+    border-radius: 120px / 50px;
+    border-style: double;
+    color: white;
+    text-align: center;
+    font-size: 147px;
+    font-family: "Arial black";
+    background: black;
+    height: 200px;
+    width: 950px;
+    margin: 160px -30px;
+    text-align: end;
+}
+#nonrebour{
+    color: black;
+    font-size: 30px;
+    background-color: #33FF99;
+    height: 80px;
+    width: 450px;
+    margin-top: -30px;
+    margin-left: -20px;
+}
+#nrebour{
+    text-align: center;
+    margin: -15px;
+}
+#boutte {
+    position: fixed;
+    left: -80px;
+    bottom: 0;
+    width: 110%;
+    margin: 100px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    height:  15%;
+    width: 100%;
+    background-color: transparent;
+    margin-left: -3%;
+    color: white;
+    text-align: center;
+}
+
+.play {
+    border: 1px solid green;
+    background-color: royalblue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+.pause {
+
+    border: 1px solid green;
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.header {
+    height:40px;
+    width:50px;
+    margin:-30px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+span{
+    margin:30px;
+
+}
+.image_play{
+    background-image: url("../images/play.png");
+}
+.play_image{
+    width: 30px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+div#menu1 {
+
+    float:right;
+    width:700px;
+    font-size: 15px;
+    text-align: right;
+
+
+}
+
+div#contenu1 {
+    float:left;
+    width:100px;
+    height:800px;
+    background-color:#ffffff;
+
+}

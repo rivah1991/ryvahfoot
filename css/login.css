@@ -1,0 +1,31 @@
+div#cadre1
+{
+    width: 50%;
+    float: left;
+    height: 100px;
+
+}
+
+div#cadre2
+{
+    width: 38%;
+    float: left;
+    height: 100px;
+
+}
+.images {
+    #position:absolute;
+
+
+    padding:4px;
+    width: 750px;
+    height: 400px;
+    color:red;
+    margin-left: 5%;
+    overflow:hidden;
+
+}
+{
+    font-style: italic;
+}
+
