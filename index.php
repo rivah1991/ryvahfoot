@@ -1,5 +1,5 @@
 <?php
-include("../config/database.php");
+include("config/database.php");
 session_start();
 $error = "";
 
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         session_start();
         $_SESSION['login_user'] = $myusername;
 
-        header("location: ../menu/classement.php");
+        header("location: menu/classement.php");
     }else {
           $error =  "<script>alert('tsy ao anaty base ny anarana lah')</script>";
     }
