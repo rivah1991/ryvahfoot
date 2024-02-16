@@ -39,9 +39,14 @@
     <div>
         <?php include('../ressources/contenu.php'); ?>
 
-        <h1>Contact foot à 7</h1>
-        <h2>President Tofa: 033.43.475.72</h2>
-        <h2>Adjoint Bota: 033.43.475.72</h2>
+        <h1 class="text-center">Contact foot à 7</h1>
+        <div class="container">
+            <ul>
+                <li>President Tofa: 033.43.475.72</li>
+                <li>Adjoint Bota: 033.43.475.72</li>
+            </ul>
+        </div>
+
 
     </div>
 
