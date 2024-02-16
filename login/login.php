@@ -29,49 +29,129 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<html>
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="../css/login.css">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <meta charset="utf-8">
-
-
-    <style type = "text/css">
+    <style>
         body {
-            font-family:"times New Roman";
-            font-size:20px;
-            text-align: center;
-            width: 120%;
-
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50vh;
 
         }
-        label {
-            font-weight:bold;
-
-            font-size:14px;
-
+        #cadre1 {
+            width: 50%;
+            padding: 20px;
         }
-
-        .box {
-            border:#666666 solid 1px;
-            width: 220px;
+        .images {
+            width: 100%;
+            border-radius: 10px;
+            /* height: auto; */
+            /* border: 2px solid #333333; */
+        }
+        #cadre2 {
+            width: 50%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .login-form {
+            background-color: #fff;
+            border-radius: 10px;
+            /* border: 2px solid #333333; */
+            padding: 10px;
+        }
+        .login-form h2 {
+            background-color: #333333;
+            color: #fff;
+            padding:20px;
+            margin: 0;
             text-align: center;
+        }
+        .form-group {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            font-size: 14px;
+            color: #cc0000;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            #cadre1, #cadre2 {
+                width: 100%;
+                padding: 10px;
+            }
+            .images {
+                margin-bottom: 20px;
+            }
         }
     </style>
-
 </head>
-
-
-<body bgcolor = "#FFFFFF">
-<br>
-<div id="cadre1">
-    <div class="">
-     <img  src="" class= 'images' id="masuperimage" >
-
-        <SCRIPT language="JavaScript" type="text/javascript">
+<body>
+<div class="container">
+    <div id="cadre1">
+        <img src="../images/joueur/1.jpg" class="images" id="masuperimage">
+    </div>
+    <div id="cadre2">
+        <div class="login-form">
+            <h2>Se connecter</h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="username">Utilisateur :</label>
+                    <input type="text" id="username" name="username" placeholder="Nom utilisateur" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Entrer">
+                </div>
+            </form>
+            <!-- <div class="error-message"><?php echo $error; ?></div> -->
+        </div>
+    </div>
+</div>
+<SCRIPT language="JavaScript" type="text/javascript">
             // Un tableau qui va contenir toutes tes images.
             var images = new Array();
             /**
@@ -102,7 +182,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     pointeur = 0;
                 }
 
-                window.setInterval("ChangerImage()", 2000)
+                window.setTimeout("ChangerImage()", 5000)
             }
 
             // Charge la fonction
@@ -110,41 +190,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 ChangerImage();
             }
         </SCRIPT>
-
-
-</div>
-</div>
-</br>
-</br>
-<div id="cadre2">
-    <div class="complet" align = "center">
-        <div style = "width:400px; height: 250px; border: solid 2px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px; text-align: center"><b>Se connecter</b></div>
-
-            <div style = "margin:40px">
-
-                <form action = "" method = "post">
-                    <label>Utilisateur  :</label>
-                    <input type = "text" name = "username" class = "box" placeholder="nom utilisateur"/><br /><br />
-                    <label>Mot de passe  :</label>  <input type = "password" name = "password" class = "box" placeholder="mot de passe"/><br/><br />
-                    <div style="text-align: center";>
-                        <input  type = "submit" value = " Entrer "/><br />
-                    </div>
-                </form>
-                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error  ?></div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
 
 </body>
 </html>
