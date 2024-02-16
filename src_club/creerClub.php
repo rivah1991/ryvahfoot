@@ -77,12 +77,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<div class=" justify-content-end mx-auto">
-    <div class="container-fluid">
+<div class=" justify-content-end ">
+    <div class="container-fluid ">
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header">
-                    <h2 style="padding-left: 30%">Formulaire d'un club</h2>
+                    <h2 class="text-center">Formulaire d'un club</h2>
                 </div>
                 <p></p>
                 <form class="" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <span class="help-block"><?php echo $airtel_err; ?></span>
                     </div>
 
-                    <div style="padding-left: 40%">
+                    <div class="text-center">
                         <input type="submit" class="btn btn-primary" value="Valider">
                         <a href="" class="btn btn-danger">Initialiser</a>
                     </div>
