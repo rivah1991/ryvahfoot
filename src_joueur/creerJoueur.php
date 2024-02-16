@@ -75,16 +75,8 @@
         $adresse = $input_adresse;
     }
 
-    // Validate salary
-    $input_airtel = trim($_POST["airtel"]);
-    if (empty($input_airtel)) {
-        $airtel_err = "<script>alert(\"Entrer votre numéro de telephone\")</script>";
-    } elseif (!preg_match("#^033[0-9]{7}$|^034[0-9]{7}$|^032[0-9]{7}$#", $input_airtel)) {
-        $airtel_err = "<script>alert(\"$input_airtel:  n'existe pas\")</script>";
-    } else {
-        $airtel = $input_airtel;
-    }
-
+  
+  
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
             $adresse = $_POST['adresse'];
@@ -97,7 +89,7 @@
 
 
 
-            if (empty($nom_err) && empty($adresse_err) && empty($airtel_err) && empty($orange_err) && empty($telma_err)) {
+            if (empty($nom_err) && empty($adresse_err) && empty($prenom_err)) {
                 // Prepare an insert statement
                 $sql = "INSERT INTO joueur (nom, prenom, date, adresse, club_ancien, club_actuelle, telephone, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
