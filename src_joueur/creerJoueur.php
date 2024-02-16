@@ -125,8 +125,8 @@
             <div class=" row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2 style="text-align: center">ASSOCIATION MADAGASCAR STANDARD PLUS</h2>
-                        <h2 style="text-align: center">TOURNOI COUM 67 - 2019/2020</h2>
+                        <h2 style="text-align: center">Association Madagascar Standard PLUS</h2>
+                        <h2 style="text-align: center">Tournoi Coum 67 - 2019/2020</h2>
                     </div>
                     <p></p>
 
