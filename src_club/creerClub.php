@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<div class=" justify-content-end">
+<div class=" justify-content-end mx-auto">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">

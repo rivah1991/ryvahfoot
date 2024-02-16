@@ -1,7 +1,8 @@
-<div id="head" class="text-dark ">
+<div id="head" class="text-dark bg-warning ">
     <ul id="vertical_nav" class="nav">
         <div id="logo" class="">
             <li class="nav-item navbar-expand-sm bg-light justify-content-left">
+                <img src="../images/logo.webp" height="40" width="55">
                 <img src="../images/football.svg" height="40" width="55">
             </li>
         </div>
