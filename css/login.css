@@ -14,9 +14,6 @@ div#cadre2
 
 }
 .images {
-    #position:absolute;
-
-
     padding:4px;
     width: 750px;
     height: 400px;
@@ -24,8 +21,5 @@ div#cadre2
     margin-left: 5%;
     overflow:hidden;
 
-}
-{
-    font-style: italic;
 }
 

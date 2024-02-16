@@ -1,10 +1,11 @@
 <div id="head" class="text-dark bg-warning ">
     <div id="horizontal_nav" class="nav">
-
-        <div id="nav_menu" class="nav">
-            <div style="padding-left:20px">
-                <img src="../images/football.png" height="50" width="50">
-            </div>
+        
+        <div id="nav_menu" class="nav" >
+            <div style="padding-left:20px" id="imageLogo">
+                <img src="../images/football.png" height="50" width="50"> 
+            </div>          
+ 
             <div id="nav_menu" class="nav" style="padding-left: 35em">
                 <ul class="nav">
                     <li class="nav-item">
