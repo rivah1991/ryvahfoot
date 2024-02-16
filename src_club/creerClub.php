@@ -77,15 +77,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<div class=" justify-content-end" id="formulaire" >
+<div class=" justify-content-end" id="formulaire">
     <div class="container-fluid ">
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header">
-                    <h2 class="text-center">Formulaire d'un club</h2>
+                    <h2 style="padding-left: 30%">Formulaire d'un club</h2>
                 </div>
                 <p></p>
-                <form class="" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <div class="form-group <?php echo (!empty($nom_err)) ? 'has-error' : ''; ?> ">
                         <label>Nom du club:</label>
                         <input type="text" name="nom" class="form-control col-sm-10" value="<?php echo $nom; ?>">
@@ -93,8 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="form-group <?php echo (!empty($adresse_err)) ? 'has-error' : ''; ?>">
                         <label>Adresse:</label>
-                        <input type="text" name="adresse" class="form-control col-sm-10" value="<?php echo $adresse; ?>">
-                        <!-- <textarea name="adresse" class="form-control col-sm-10"><?php echo $adresse; ?></textarea> -->
+                        <input type="text" name="adresse" class="form-control col-sm-10"><?php echo $adresse; ?>
                         <span class="help-block"><?php echo $adresse_err; ?></span>
                     </div>
                     <div class="form-group <?php echo (!empty($airtel_err)) ? 'has-error' : ''; ?>">
@@ -103,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <span class="help-block"><?php echo $airtel_err; ?></span>
                     </div>
 
-                    <div class="text-center">
+                    <div style="padding-left: 40%">
                         <input type="submit" class="btn btn-primary" value="Valider">
                         <a href="" class="btn btn-danger">Initialiser</a>
                     </div>
