@@ -2,10 +2,12 @@
     <div id="horizontal_nav" class="nav">
         
         <div id="nav_menu" class="nav" >
-           
-                <img src="../images/football.png" height="50" width="50">           
-       <div id="nav_menu" class="nav" style="padding-left: 35em">
-            <li class="nav-item">
+            <div style="padding-left:20px">
+                <img src="../images/football.png" height="50" width="50"> 
+            </div>          
+            <div id="nav_menu" class="nav" style="padding-left: 35em">
+            <ul class="nav"> 
+                <li class="nav-item">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     inscription
@@ -44,6 +46,7 @@
             <li class="nav-item">
 
             </li>
+            </ul>
         </div>
         </div>
 </div>
