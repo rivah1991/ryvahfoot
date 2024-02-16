@@ -1,13 +1,10 @@
 <div id="head" class="text-dark bg-warning ">
-    <ul id="vertical_nav" class="nav">
-        <div id="logo" class="">
-            <li class="nav-item navbar-expand-sm bg-light justify-content-left">
-                <img src="../images/logo.webp" height="40" width="55">
-                <img src="../images/football.png" height="40" width="55">
-            </li>
-        </div>
-
-        <div id="nav_menu" class="nav" style="padding-left: 35em">
+    <div id="horizontal_nav" class="nav">
+        
+        <div id="nav_menu" class="nav" >
+           
+                <img src="../images/football.png" height="50" width="50">           
+       <div id="nav_menu" class="nav" style="padding-left: 35em">
             <li class="nav-item">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,7 +13,6 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="../menu/inscriptionClub.php">Club Football</a>
                     <a class="dropdown-item" href="../src_joueur/creerJoueur.php">Joueur Football</a>
-
                 </div>
             </li>
             </li>
@@ -49,4 +45,5 @@
 
             </li>
         </div>
-    </ul>
+        </div>
+</div>
