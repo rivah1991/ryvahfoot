@@ -88,7 +88,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             display: block;
             margin-bottom: 10px;
         }
-        .form-group input[type="text"],
+        .form-group input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
         .form-group input[type="password"] {
             width: 100%;
             padding: 10px;
@@ -134,7 +140,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div id="cadre2">
         <div class="login-form" >
-            <h2 style="background : #ffc107">Se connecter</h2>
+            <h2 style="background: #ffc107;">Se connecter</h2>
             <form action="" method="post">
                 <div class="form-group">
                     <label for="username">Utilisateur :</label>
