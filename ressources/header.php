@@ -3,7 +3,7 @@
         <div id="logo" class="">
             <li class="nav-item navbar-expand-sm bg-light justify-content-left">
                 <img src="../images/logo.webp" height="40" width="55">
-                <img src="../images/football.svg" height="40" width="55">
+                <img src="../images/football.png" height="40" width="55">
             </li>
         </div>
 
