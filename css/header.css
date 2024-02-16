@@ -11,17 +11,16 @@
 }
 
 /* Style pour le contenu pour permettre le défilement */
-#contenu {
+/* #contenu {
     margin-top: 70px;
     /* Hauteur du menu */
-    padding: 20px;
-    /* Espacement autour du contenu */
+/*padding: 20px;
+/* Espacement autour du contenu */
 
-}
+/*}
+
+*/
 /* 
 #imageLogo{
     display:inline;
 } */
-
-
-
