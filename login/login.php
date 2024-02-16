@@ -129,7 +129,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <div class="container">
     <div id="cadre1">
-        <img src="../images/joueur/1.jpg" class="images" id="masuperimage">
+        <img src="../images/joueur/1.jpg" class="images" id="imagejoueur">
     </div>
     <div id="cadre2">
         <div class="login-form">

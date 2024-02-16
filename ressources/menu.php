@@ -1,69 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        #menu {
-            background-color: #f8f9fa;
-            padding: 20px;
-            
-        }
-
-        .nav-item {
-            list-style: none;
-            margin-bottom: 10px;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: #343a40;
-            font-weight: bold;
-            display: block;
-            padding: 5px 0;
-            border-bottom: 1px solid #dee2e6;
-            transition: background-color 0.3s;
-        }
-
-        .nav-link:hover {
-            background-color: #e9ecef;
-        }
-
-        .dropdown-menu {
-            display: none;
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            position: absolute;
-            z-index: 1;
-        }
-
-        .dropdown-item {
-            color: #343a40;
-            text-decoration: none;
-            display: block;
-            padding: 5px 0;
-            transition: background-color 0.3s;
-        }
-
-        .dropdown-item:hover {
-            background-color: #e9ecef;
-        }
-
-        .dropright:hover .dropdown-menu {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-<div id="menu" style="width: 200px;">
+<div id="menu" >
     <ul class="nav flex-column">
         <li class="nav-item">
         <li class="nav-item dropdown dropright">
@@ -131,7 +66,4 @@
 
     </ul>
 
-</div>
 
-</body>
-</html>
