@@ -32,7 +32,7 @@
 
 </div>
 <div>
-    <?php include('../ressources/contenu.php'); ?>
+    <!-- <?php include('../ressources/contenu.php'); ?> -->
     <?php
     // Process delete operation after confirmation
     if(isset($_POST["id"]) && !empty($_POST["id"])){

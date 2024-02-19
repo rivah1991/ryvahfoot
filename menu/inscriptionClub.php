@@ -37,7 +37,7 @@
 
     </div>
     <div>
-        <?php include('../ressources/contenu.php'); ?>
+        <!-- <?php include('../ressources/contenu.php'); ?> -->
         <?php include('../src_club/creerClub.php'); ?>
 
 </body>

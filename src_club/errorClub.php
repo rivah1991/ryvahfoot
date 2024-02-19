@@ -32,7 +32,8 @@
 
 </div>
 <div>
-    <?php include('../ressources/contenu.php'); ?>
+    <!--blanc contenu -->
+    <!-- <?php include('../ressources/contenu.php'); ?> -->
     <!DOCTYPE html>
     <html lang="en">
     <head>
