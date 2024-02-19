@@ -6,7 +6,7 @@
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                 poule
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="../src/Poule.php">insertion poule de 4</a>
                 <a class="dropdown-item" href="../src/Poule1.php">insertion poule de 1 a 10</a>
                 <a class="dropdown-item" href="../src/listePoule.php">liste poule</a>
