@@ -5,6 +5,7 @@
     <title>Titre</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/menu.css">
+    
     <link rel="stylesheet" type="text/css" href="../css/StyleTournoi.css">
     <link rel="stylesheet" type="text/css" href="../asserts/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../asserts/bootstrap.min.css">
@@ -30,14 +31,14 @@
     <div>
         <?php include('../ressources/header.php') ?>
     </div>
-    <div>
-        <?php include('../ressources/menu.php') ?>
 
-    </div>
-    <div>
-        <?php include('../ressources/contenu.php'); ?>
-        <?php include('../src/Chrono.php'); ?>
-    </div>
+        <div>
+            <?php include('../ressources/menu.php') ?>  
+        </div>
+        <div>
+                <!-- <?php include('../ressources/contenu.php'); ?> -->
+                <?php include('../src/Chrono.php'); ?>
+        </div>
 
 </body>
 

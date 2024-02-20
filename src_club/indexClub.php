@@ -93,6 +93,7 @@
                             text-align: center;
 
                         }
+                        
                     </style>
                     <?php
                     // Include config file
@@ -103,13 +104,12 @@
                     if($result = $base->query($sql)){
                         if($result->num_rows > 0){
                             echo "<table class='table '>";
-                            echo "<thead class='thead-dark'>";
+                            echo "<thead style='background:rgb(62, 228, 240)'>";
                             echo "<tr>";
-                            echo "<th>Nom</th>";
-                            echo "<th>Adresse</th>";
-                            echo "<th>Telephone</th>";
-
-                            echo "<th>Action</th>";
+                            echo "<th >Nom</th>";
+                            echo "<th >Adresse</th>";
+                            echo "<th >Telephone</th>";
+                            echo "<th >Action</th>";
                             echo "</tr>";
                             echo "</thead>";
                             echo "<tbody>";
@@ -123,11 +123,10 @@
 
                                  */
                                  echo "<tr>";
-                                echo "<td>" . mb_strtoupper($row['nomClub']) . "</td>";
-                                echo "<td>" . mb_strtoupper($row['adresse']) . "</td>";
-                                echo "<td>" . $row['airtel'] . "</td>";
-
-                                echo "<td>";
+                                echo "<td style='font-family:'Arial black'>" . mb_strtoupper($row['nomClub']) . "</td>";
+                                echo "<td style='font-family:'Arial black'>" . mb_strtoupper($row['adresse']) . "</td>";
+                                echo "<td style='font-family:'Arial black'>" . $row['airtel'] . "</td>";
+                                echo "<td style='font-family:'Arial black'>";
                                 echo "<div>";
 
                                 echo "<a href='voirClub.php?id=". $row['id'] ."'

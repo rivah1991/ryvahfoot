@@ -24,6 +24,14 @@
             font-family: "Arial";
 
         }
+
+        .container {
+            justify-content: center;
+        }
+
+        .ContactTab {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -37,24 +45,31 @@
 
     </div>
     <div>
-        <?php include('../ressources/contenu.php'); ?>
+        <!-- <?php include('../ressources/contenu.php'); ?> -->
 
+        <h2 class="text-center">Contact foot à 7</h2>
         <h1 class="text-center">Contact foot à 7</h1>
         <hr>
         <div class="container">
-            <ul class="list-unstyled">
-                <li>
-                    Président Tofa: 033.43.475.72
-                </li>
-                <li>
-                    Adjoint Bota: 033.43.475.72
-                </li>
-            </ul>
+            <table>
+                <tr>
+                    <td class="ContactTab">
+                        President Tofa:
+                    </td>
+                    <td>
+                        033.43.475.72
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ContactTab">
+                        Adjoint Bota:
+                    </td>
+                    <td>
+                        033.43.475.72
+                    </td>
+                </tr>
+            </table>
         </div>
-
-
-
-
     </div>
 
 </body>

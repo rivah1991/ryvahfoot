@@ -43,40 +43,12 @@
 
         // Define variables and initialize with empty values
         $nom = $adresse = $prenom = $date = $club = $telephone = "";
-          $nom_err = $adresse_err = $airtel_err = $prenom_err = "";
+        //   $nom_err = $adresse_err = $airtel_err = "";
         $chaine = array("options" => array("regexp" => "/^[a-zA-Z\s]+$/"));
 
 
         // Processing form data when form is submitted
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-            $input_nom = trim($_POST["nom"]);
-    if (empty($input_nom)) {
-        $nom_err = "<script>alert(\"Entrez votre nom\")</script>";
-    } elseif (!filter_var($input_nom, FILTER_VALIDATE_REGEXP, $chaine)) {
-        $nom_err = "<script>alert(\"Nom inexistant\")</script>";
-    } else {
-        $nom = $input_nom;
-    }
-    $input_prenom = trim($_POST["prenom"]);
-    if (empty($input_prenom)) {
-        $prenom_err = "<script>alert(\"Entrez votre nom\")</script>";
-    } elseif (!filter_var($input_prenom, FILTER_VALIDATE_REGEXP, $chaine)) {
-        $prenom_err = "<script>alert(\"Nom inexistant\")</script>";
-    } else {
-        $prenom_err = $input_prenom;
-    }
-
-    // Validate address
-    $input_adresse = trim($_POST["adresse"]);
-    if (empty($input_adresse)) {
-        $adresse_err = "Entrer une adresse valide.";
-    } else {
-        $adresse = $input_adresse;
-    }
-
-  
-  
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
             $adresse = $_POST['adresse'];
@@ -89,7 +61,7 @@
 
 
 
-            if (empty($nom_err) && empty($adresse_err) && empty($prenom_err)) {
+            if (empty($nom_err) && empty($adresse_err) && empty($airtel_err) && empty($orange_err) && empty($telma_err)) {
                 // Prepare an insert statement
                 $sql = "INSERT INTO joueur (nom, prenom, date, adresse, club_ancien, club_actuelle, telephone, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -150,13 +122,24 @@
         }
         ?>
 
-        <div class=" justify-content-end">
-            <div class="container-fluid">
-                <div class=" row">
-                    <div class="col-md-12">
-                        <div class="page-header text-center">
-                            <h2>Association Madagascar Standard Plus</h2>
-                            <h2>Tournoi Coum 67 - 2019/2020</h2>
+       <div class=" justify-content-end">
+        <div class="container-fluid">
+            <div class=" row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2 style="text-align: center">Association Madagascar Standard PLUS</h2>
+                        <h2 style="text-align: center">Tournoi Coum 67 - 2019/2020</h2>
+                    </div>
+                    <p></p>
+
+                    <div id="contenu1">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Nom</label>
+                            <div class="col-sm-6">
+                                <input type="text" name="nom" class="form-control" id="nomJoueur" placeholder="Entrez votre nom">
+                            </div>
                         </div>
                         <p></p>
 

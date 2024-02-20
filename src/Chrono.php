@@ -4,11 +4,81 @@
 		<title>CHRONO</title>
         <script src="../scripts/jquery-3.4.1.min.js"></script>
         <script src="../scripts/rebours.js"></script>
-  <link rel= "stylesheet"   type = "text/css"   href="../css/Chrono.css">
-	</head>
+        <link rel="stylesheet" type="text/css" href="../css/Chrono.css">
+	
+    <style>
+        .soustitre{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #global{
+            padding-top: 0;
+        }
+        #content{
+            border-radius: 30px;
+            background-color:rgb(62, 228, 240);
+            size: 200px;
+            
+        }
+        #content{
+            float: left;
+            margin-left: 85px;
+            margin-top: 50px;
+            width:450px;
+            height:300px;
+            padding: 20px;
+            background: rgb(62, 228, 240);
+            font-size: 25px;
+            border-radius: 30px;
+        }
+        #nonrebour{
+            color: black;
+            font-size: 30px;
+            height: 80px;
+            width:450px;
+            background-color: aquamarine;
+            margin-top: -30px;
+            margin-left: -20px;
+        }
+        input{
+            border-color: red;
+            size: 30;
+        }
+        label{
+            font-size:16px;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        select{
+            border-radius: 10px;
+            font-size:30px;
+            border-color: rgb(62, 228, 240);
+        }
+        #countdown{
+            font-size:30px;
+            padding-bottom: 30px;
+        }
+        #choixDePoule{
+         padding-left: 40%;
+        }
+        .header {
+            /* height:40px; */
+            width:50px;
+            margin:-30px;
+        }
+        .sidebar2{
+            /* float:; */
+            margin-top: 5%;
+            width: 150px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
 
 	<body>
-    <?php include('../ressources/contenu.php'); ?>
+    <!-- <?php include('../ressources/contenu.php'); ?> -->
 
     <?php
     // Include config file
@@ -18,17 +88,12 @@
     $equipeA = $equipeB = $scoreA = $scoreB= "";
     //   $nom_err = $adresse_err = $airtel_err = "";
     $chaine = array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/"));
-
-
     // Processing form data when form is submitted
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $equipeA = $_POST['equipeA'];
         $equipeB = $_POST['equipeB'];
         $scoreA = $_POST['scoreA'];
         $scoreB = $_POST['scoreB'];
-
-
-
 
         if(empty($nom_err) && empty($adresse_err) && empty($airtel_err) && empty($orange_err) && empty($telma_err)){
             // Prepare an insert statement
@@ -70,11 +135,10 @@
 <div class="font">
 <div id="global">
        <div id="header">
-          <div class="soustitre">
-           ORGANISATEUR
-          </div>
-		<marquee direction="left"><h1>ASSOCIATON MADAGASCAR STANDARD PLUS</h1></marquee>
+
+		<marquee direction="left"><h1>Association Madagascar Standard Plus</h1></marquee>
       </div>
+    <div id="choixDePoule">
     <label for="equipe">Choix de poule :</label>
     <div class="col-sm-16">
         <select name='equipeB' style='width: 150px'>
@@ -83,7 +147,7 @@
         <option value="pouleC" id="optionC">poule C</option>
         <option value="pouleD" id="optionD">poule D</option>
        </select>
-
+    </div>
     </div>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
     <div id="body">
@@ -232,7 +296,7 @@
             <br/>
             <input class="input" name="scoreA" type="number" />
         </div>
-          <div id="content">
+          <div id="content" >
               <div controls >
                   Temps restant:
                   <br/>
@@ -242,7 +306,7 @@
                   <div id="nonrebour">
 
                       <br/>
-                      <div id="nrebour">
+                      <div id="nrebour" >
                      <span id="countdown">00 : 00</span>
 
                       </div>
