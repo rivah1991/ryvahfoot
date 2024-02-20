@@ -48,7 +48,6 @@
         <!-- <?php include('../ressources/contenu.php'); ?> -->
 
         <h2 class="text-center">Contact foot à 7</h2>
-        <h1 class="text-center">Contact foot à 7</h1>
         <hr>
         <div class="container">
             <table>
